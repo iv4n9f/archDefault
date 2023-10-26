@@ -5,7 +5,7 @@ dir=$(pwd)
 cd ~
 
 sudo pacman -Syu
-sudo pacman -S vim git libxcb xcb-util xcb-util-wm xcb-util-keysyms lightdm lightdm-gtk-greeter xorg xorg-xinit polybar xterm rofi feh --noconfirm
+sudo pacman -S vim git libxcb xcb-util xcb-util-wm xcb-util-keysyms gdm xorg xorg-xinit polybar xterm rofi feh --noconfirm
 
 git clone https://github.com/baskerville/bspwm.git
 git clone https://github.com/baskerville/sxhkd.git
@@ -31,5 +31,5 @@ echo "exec bspwm" >> ~/.xinitrc
 chmod u+x ~/.config/bspwm/bspwmrc
 chmod +x ~/.config/polybar/launch.sh
 
-sudo systemctl enable lightdm
+sudo systemctl enable gdm
 sudo reboot

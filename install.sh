@@ -32,8 +32,6 @@ echo "exec bspwm" >> ~/.xinitrc
 chmod u+x ~/.config/bspwm/bspwmrc
 chmod +x ~/.config/polybar/launch.sh
 
-sudo systemctl enable gdm
-sudo reboot
 
 # Optional
 
@@ -50,4 +48,7 @@ curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hack.t
 tar -xvf Hack.tar.xz
 mkdir -p ~/.local/share/fonts
 cp *.ttf ~/.local/share/fonts/.
+
+
+sudo systemctl enable gdm
 

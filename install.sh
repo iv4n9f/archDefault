@@ -5,7 +5,7 @@ dir=$(pwd)
 cd ~
 
 sudo pacman -Syu
-sudo pacman -S vim git libxcb xcb-util xcb-util-wm xcb-util-keysyms gdm xorg xorg-xinit polybar xterm rofi feh tmux chromium--noconfirm
+sudo pacman -S vim git libxcb xcb-util xcb-util-wm xcb-util-keysyms gdm xorg xorg-xinit polybar xterm rofi feh tmux chromium --noconfirm
 
 git clone https://github.com/baskerville/bspwm.git
 git clone https://github.com/baskerville/sxhkd.git

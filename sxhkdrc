@@ -1,6 +1,6 @@
 # terminal emulator
 super + Return
-	xterm
+	xterm -bg black -fg green -fa 'Hack Nerd Font' -fs 10
 
 # program launcher
 super + d
@@ -102,3 +102,8 @@ super + ctrl + {Left,Down,Up,Right}
 # Custom move/resize
 alt + super + {Left,Down,Up,Right}
 	~/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
+
+# Optiona
+
+super + g
+	chromium

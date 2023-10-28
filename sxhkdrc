@@ -11,7 +11,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # quit/restart bspwm
-super + alt + {q,r}
+super + alt + {q,t}
 	bspc {quit,wm -r}
 
 # close and kill

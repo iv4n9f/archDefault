@@ -2,5 +2,5 @@
 
 killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-polybar top &
-polybar bot &
+polybar main_top &
+polybar main_bot &

@@ -17,8 +17,8 @@ cp $dir/bspwmrc_resize ~/.config/bspwm/scripts
 cp $dir/sxhkdrc ~/.config/sxhkd/
 cp $dir/launch.sh ~/.config/polybar/
 cp $dir/config.ini ~/.config/polybar/
-cp $dir/wallpaper.jpg ~/pictures/wallpaper.jpg
-cp $dir/wallpaper.jpg
+cp $dir/wallpaper.png ~/pictures/wallpaper.png
+cp $dir/wallpaper.png
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 echo "exec bspwm" >> ~/.xinitrc
 chmod u+x ~/.config/bspwm/bspwmrc
@@ -36,8 +36,8 @@ curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hack.t
 tar -xvf Hack.tar.xz
 mkdir -p ~/.local/share/fonts
 cp *.ttf ~/.local/share/fonts/.
-cp -r $dir/scripts ~/.config/polybar/
-chmod u+x ~/.config/polybar/scripts/*
+cp -r $dir/scripts ~/.config/polybar/modules
+chmod u+x ~/.config/polybar/modules/*
 cd ~
 sudo rm -r bspwm fonts rofi-themes-collection sxhkd archDefault yay
 yay -Y --gendb

@@ -2,7 +2,7 @@
 
 sxhkd &
 wmname LG3D &
-feh --bg-fill ~/pictures/wallpaper.jpg &
+feh --bg-fill ~/pictures/wallpaper.png &
 ~/.config/polybar/launch.sh &
 
 bspc config pointer_modifier mod1
